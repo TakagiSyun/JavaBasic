@@ -33,10 +33,10 @@ public class PTra05_03 {
 
 			System.out.println((index + 1) + "人目");
 			System.out.println("山、川、海でどこに行きたいか入力してください。");
-			
+
 			// コマンドプロンプトで入力した文字列が変数lineに代入されます
 			String line = scanner.nextLine();
-			
+
 			/*
 			 * ★ 以下の仕様で、switch文を記述してください
 			 *
@@ -56,22 +56,17 @@ public class PTra05_03 {
 				ocean++;
 				break;
 			default:
-					System.out.println("無効票です");
+				System.out.println("無効票です");
+				
+				
+			}
+			index++;
 			}
 
-
-
-			// ★ 変数indexに1を足して、変数indexに代入してください
-			index++;
-
-		}
-
 		// ★ 変数mountain、river、oceanの票数をそれぞれ出力してください
-		System.out.println("山は"+mountain+"票");
-		System.out.println("川は"+river+"票");
+		System.out.println("山"+mountain+"票");
+		System.out.println("川"+river+"票");
 		System.out.println("海"+ocean+"票");
-
-
 
 	}
 }

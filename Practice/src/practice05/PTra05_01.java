@@ -15,7 +15,6 @@ public class PTra05_01 {
 
 		/*
 		 *  ★ 以下の仕様で、switch文を記述してください
-		 *  
 		 *
 		 *  ●numが5だった場合			->	「満点」
 		 *  ●numが4だった場合			->	「合格点」
@@ -26,26 +25,26 @@ public class PTra05_01 {
 		 *  ●numが0～5以外だった場合	->	「正しい数値を入れてください」
 		 */
 		switch(num) {
-		case 0:
+		case 5:
 			System.out.println("満点");
 			break;
-		case 1:
+		case 4:
 			System.out.println("合格点");
 			break;
-		case 2:
-			System.out.println("もうすこしで合格");
-			break;
 		case 3:
+			System.out.println("もう少しで合格");
+			break;
+		case 2:
 			System.out.println("不合格");
 			break;
-		case 4:
-			System.out.println("もうすこしがんばりましょう");
+		case 1:
+			System.out.println("もう少し頑張りましょう");
 			break;
-		case 5:
+		case 0:
 			System.out.println("前の単元を復習してください");
-			break;	
+			break;
 		default:
-			System.out.println("正しい数値を入力してください");
+			System.out.println("正しい数値を入れてください");
 		}
 
 	}

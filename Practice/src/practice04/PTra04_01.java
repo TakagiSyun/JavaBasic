@@ -21,8 +21,6 @@ public class PTra04_01 {
 
 			// ★ 変数numの値を出力してください
 			System.out.println(num);
-			
-			
 
 
 		}

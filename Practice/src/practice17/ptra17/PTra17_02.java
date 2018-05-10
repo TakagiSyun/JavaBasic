@@ -1,10 +1,14 @@
 /*
+
+
  * PTra17_02.java
  *   作成	LIKEIT	2017
  *------------------------------------------------------------
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
 package practice17.ptra17;
+
+import java.io.IOException;
 
 import practice17.common.ThrowExceptionUtil;
 
@@ -25,8 +29,14 @@ public class PTra17_02 {
 		 * 以下の処理はコンパイルエラーになります。
 		 * ★ 適切な修正を行い、コンパイルエラーをなくしてください
 		 */
+		try {
+	
 		String line = ThrowExceptionUtil.inputValue();
 
 		System.out.println(line);
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+		
 	}
 }

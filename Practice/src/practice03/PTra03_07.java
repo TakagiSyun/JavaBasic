@@ -33,7 +33,7 @@ public class PTra03_07 {
 		if(num<=5&&num>=1) {
 			System.out.println(num);
 		}else {
-			System.out.println("選択したのは、1～5以外です");
+			System.out.println("洗濯したのは１〜５以外の数字です");
 		}
 
 

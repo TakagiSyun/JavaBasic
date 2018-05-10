@@ -35,18 +35,18 @@ public class PTra03_08 {
 		 *
 		 * ※ プログラムは何行書いても良いです
 		 */
+		int mymoney=0;
 		switch(num) {
 		case 1:
-			System.out.println("残金"+(money-150)+"円");
+			mymoney=money-150;
 			break;
 		case 2:
-			System.out.println("残金"+(money-160)+"円");
+			mymoney=money-160;
+			break;
 		case 3:
-			System.out.println("残金"+(money-200)+"円");
-		    break;
-		default:
-			System.out.println("エラー");
+			mymoney=money-200;
 		}
+		System.out.println(mymoney);
 
 	}
 }

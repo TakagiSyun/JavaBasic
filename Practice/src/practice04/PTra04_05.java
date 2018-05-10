@@ -39,34 +39,38 @@ public class PTra04_05 {
 			 * 以下のプログラムでは、まだ未完成です。
 			 * ★ 残りのプログラムを追記して、じゃんけんゲームを完成させてください
 			 *
-			 * ●じゃんけんに、勝った場合はプログラムを終了します 
-			 * ●あいこ、又は負けた場合は、勝つまでプログラムが終わりません01 12 20
+			 * ●じゃんけんに、勝った場合はプログラムを終了します
+			 * ●あいこ、又は負けた場合は、勝つまでプログラムが終わりません
 			 *
 			 * ※ プログラムは何行書いても良いです
 			 */
 			if (cpuHand == 0) {
 				System.out.println("グー！");
+				if(myHand==2) {
+					winFlg=true;
+				}
 
 
 
 			} else if (cpuHand == 1) {
 				System.out.println("チョキ！！");
+				if(myHand==0) {
+					winFlg=true;
+				}
 
 
 
 			} else {
 				System.out.println("パー！！");
+				if(myHand==0) {
+					winFlg=true;
+				}
 
 
 
-			}
-			if(myHand-cpuHand==-2||myHand-cpuHand==0||myHand-cpuHand==1) {
-				winFlg=false;
-			}else {
-			winFlg=true;
-			System.out.println("勝ちました‼ゲームを終了します。");
 			}
 
 		}
+		System.out.println("ゲームに勝利しました。プログラムを終了します。");
 	}
 }

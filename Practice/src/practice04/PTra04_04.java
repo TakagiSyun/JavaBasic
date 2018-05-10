@@ -24,7 +24,7 @@ public class PTra04_04 {
 		System.out.println("=========< START >==========");
 
 		// ★ 変数progressが変数mapの数より少ない限り繰り返しを行う条件式を記述してください
-		while (progress<map) {
+		while (!(progress>map)) {
 
 			System.out.println("サイコロを振ります。Enterを押してください");
 
@@ -37,7 +37,7 @@ public class PTra04_04 {
 			dice = dice + 1;
 
 			// ★ サイコロを振って出た目を、変数progressに加算してください
-			progress=progress+dice;
+			progress+=dice;
 
 
 			// ★ 「残り##マス」と出力してください（##には、残りマスの数を入れてください）
